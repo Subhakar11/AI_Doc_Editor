@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajaia Docs Lite</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge">A</div>
+        <div>
+          <h1>Ajaia Docs Lite</h1>
+          <p>Collaborative editor prototype</p>
+        </div>
+      </div>
+
+      <section class="panel">
+        <label for="userSelect">Working as</label>
+        <select id="userSelect"></select>
+        <p class="hint">Seeded users are available for review and sharing.</p>
+      </section>
+
+      <section class="panel">
+        <div class="row">
+          <h2>Your documents</h2>
+          <button id="newDocBtn" class="ghost">+ New</button>
+        </div>
+        <div id="docList" class="doc-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Import file</h2>
+        <p class="hint">Supports .txt and .md. A new editable document is created from the file content.</p>
+        <label class="file-btn">
+          Choose file
+          <input id="fileInput" type="file" accept=".txt,.md,text/plain,text/markdown" hidden />
+        </label>
+      </section>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div>
+          <div class="label-row">
+            <span id="docBadge" class="badge">No document selected</span>
+            <span id="saveState" class="save-state">Idle</span>
+          </div>
+          <input id="titleInput" class="title-input" placeholder="Document title" disabled />
+        </div>
+        <div class="actions">
+          <button data-cmd="bold"><strong>B</strong></button>
+          <button data-cmd="italic"><em>I</em></button>
+          <button data-cmd="underline"><u>U</u></button>
+          <button data-cmd="h1">H1</button>
+          <button data-cmd="h2">H2</button>
+          <button data-cmd="insertUnorderedList">• List</button>
+          <button data-cmd="insertOrderedList">1. List</button>
+          <button id="saveBtn" class="primary">Save</button>
+        </div>
+      </header>
+
+      <section class="editor-shell">
+        <div id="emptyState" class="empty-state">
+          <h2>Select a document or create a new one</h2>
+          <p>Use the sidebar to create, rename, share, or import files.</p>
+        </div>
+
+        <div id="editorWrap" class="editor-wrap hidden">
+          <div class="meta-grid">
+            <div class="panel compact">
+              <h3>Sharing</h3>
+              <div class="row gap">
+                <input id="shareEmail" type="email" placeholder="teammate email" />
+                <button id="shareBtn">Share</button>
+              </div>
+              <div id="sharedInfo" class="shared-info"></div>
+            </div>
+            <div class="panel compact">
+              <h3>Document source</h3>
+              <div id="sourceInfo" class="small-copy"></div>
+            </div>
+          </div>
+          <div id="editor" class="editor" contenteditable="true" spellcheck="true"></div>
+        </div>
+      </section>
+
+      <div id="toast" class="toast hidden"></div>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "ai-native-doc-editor",
+  "version": "1.0.0",
+  "description": "Lightweight collaborative document editor for AI-Native Full Stack Developer assignment",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

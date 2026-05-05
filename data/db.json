@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": "u_ali",
+      "name": "Alicia Dev",
+      "email": "alicia@ajaia.internal"
+    },
+    {
+      "id": "u_ben",
+      "name": "Ben Collaborator",
+      "email": "ben@ajaia.internal"
+    },
+    {
+      "id": "u_cara",
+      "name": "Cara Reviewer",
+      "email": "cara@ajaia.internal"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_6eff82cc",
+      "title": "subhakar",
+      "content": "<p>kjhgfdsjdshhdahd</p>",
+      "ownerId": "u_ali",
+      "sharedWith": [],
+      "createdAt": "2026-05-05T09:21:46.883Z",
+      "updatedAt": "2026-05-05T09:21:57.570Z",
+      "sourceFile": "subh.txt",
+      "fileType": "text/plain"
+    },
+    {
+      "id": "doc_8800ee5c",
+      "title": "subhakar doc",
+      "content": "<h1><i><u>this is my doc</u></i></h1>",
+      "ownerId": "u_ali",
+      "sharedWith": [],
+      "createdAt": "2026-05-05T09:19:36.276Z",
+      "updatedAt": "2026-05-05T09:20:20.759Z",
+      "sourceFile": null,
+      "fileType": null
+    },
+    {
+      "id": "doc_0e3f2c83",
+      "title": "Testsdfg",
+      "content": "<h1>Untitled document</h1><p>Start writing here…dkkkd</p>",
+      "ownerId": "u_ali",
+      "sharedWith": [
+        "u_cara"
+      ],
+      "createdAt": "2026-05-05T06:36:27.420Z",
+      "updatedAt": "2026-05-05T09:21:32.457Z",
+      "sourceFile": null,
+      "fileType": null
+    },
+    {
+      "id": "doc_welcome",
+      "title": "Project brief",
+      "content": "<h1>Project brief</h1><p>Use this doc to draft ideas, import files, and share with teammates.</p><ul><li>Bold and italic formatting</li><li>Headings</li><li>Lists</li></ul>",
+      "ownerId": "u_ali",
+      "sharedWith": [
+        "u_ben"
+      ],
+      "createdAt": "2026-05-01T10:00:00.000Z",
+      "updatedAt": "2026-05-01T10:00:00.000Z",
+      "sourceFile": null,
+      "fileType": null
+    }
+  ],
+  "counters": {
+    "doc": 5
+  }
+}
